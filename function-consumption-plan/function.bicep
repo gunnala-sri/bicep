@@ -31,9 +31,9 @@ resource hostingPlan 'Microsoft.Web/serverfarms@2022-03-01' = {
   properties: {}
 }
 
-var applicationInsightsNmae = 'appins-az-function'
+var applicationInsightsName = 'appins-az-function'
 resource applicationInsights 'Microsoft.Insights/components@2020-02-02' = {
-  name: applicationInsightsNmae
+  name: applicationInsightsName
   location: location
   kind: 'web'
   properties: {
